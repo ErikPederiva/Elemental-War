@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Unlock&display=swap');
+
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-family: "Unlock", serif;
+}
+
+body {
+    background-image: url("assets/cenario.png");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px  #000000;
+}
+
+
+.sua-pontuaçao, .pontuaçao-adversario {
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 20%;
+    height: 35vh;
+    text-align: center;
+    font-size: 24px;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.sua-pontuaçao {
+    left: 140px;
+}
+
+.elemento-jogador, .elemento-bot {
+    display: block;
+    margin: 24px auto 0;
+    width: 90px;
+}
+
+.pontuaçao-adversario {
+    right: 140px;
+}
+
+main {
+    width: 40vw;
+    height: 60vh;
+    margin: 160px auto 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto 0;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 3px  #000000;
+}
+
+
+img {
+    max-width: 60%;
+    margin: auto;
+}
+
+button {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    border-radius: 240px;
+    border: none;
+    box-shadow: 1px 1px 4px 2px #6d6c6c;
+    cursor: pointer;
+}
+
+button:hover {
+    img {
+        transition: 0.1s ease-in-out;
+        max-width: 70%;
+    }
+}
+
+button:active {
+    background-color: #dad4d4dc;
+}
+
+.botao-fogo {
+    display: block;
+    margin: 60px auto 0;
+}
+
+.alinhamento-agua-planta {
+    margin: 40px auto 0;
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.anuncio-resultado {
+    text-align: center;
+    margin: 70px auto 40px;
+    font-size: 40px;
+    width: 45%;
+    line-height: 50px;
+    color: white;
+    text-shadow: 4px 4px 16px  #000000;
+    background-color: #ffffff8f;
+    border-radius: 12px;
+}
+
+.botao-reset {
+    display: block;
+    height: 60px;
+    width: 300px;
+    padding: 0;
+    border-radius: 16px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 1px 1px 4px 2px #6d6c6c;
+    cursor: pointer;
+    margin: 0 auto 0;
+}
+
+.botao-reset:hover {
+    font-size: 26px;
+    transition: 0.1s ease-in-out;
+}
+
+@media  screen and (max-width: 900px) { 
+
+    body {
+        background-image: url("assets/cenario.png");
+        background-size: cover;
+        height: 105vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center 0;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px  #000000;
+    }
+
+    main {
+        width: 100vw;
+        margin: 40px auto 0;
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        margin: 0 auto 0;
+        width: 90%;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 3px  #000000;
+    }
+
+    button {
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        padding: 0;
+        border-radius: 240px;
+        border: none;
+        box-shadow: 1px 1px 4px 2px #6d6c6c;
+        cursor: pointer;
+    }
+
+
+    .botao-fogo {
+        position: absolute;
+        display: block;
+        margin: 40px auto 0;
+        left: 40%;
+    }
+
+    .alinhamento-agua-planta {
+        display: flex;
+        margin: 40px auto 0;
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    .sua-pontuaçao, .pontuaçao-adversario {
+        margin: 230px 0 0;
+        width: 45%;
+        height: 30%;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .elemento-jogador, .elemento-bot {
+        display: block;
+        margin: 12px auto 0;
+        width: 60px;
+    }
+
+    .sua-pontuaçao {
+        left: 0;
+    }
+
+    .pontuaçao-adversario {
+        right: 0;
+    }
+
+    .anuncio-resultado {
+        text-align: center;
+        margin: 340px auto 0px;
+        font-size: 35px;
+        width: 70%;
+        line-height: 45px;
+        color: white;
+        text-shadow: 4px 4px 16px  #000000;
+        background-color: #ffffff8f;
+        border-radius: 12px;
+    }
+
+    .botao-reset {
+        display: block;
+        height: 50px;
+        width: 280px;
+        padding: 0;
+        border-radius: 14px;
+        font-size: 22px;
+        border: none;
+        box-shadow: 1px 1px 4px 2px #6d6c6c;
+        cursor: pointer;
+        margin: 30px auto 0;;
+    }
+}
+
+@media  screen and (max-height: 740px) { 
+
+    body {
+        background-image: url("assets/cenario.png");
+        background-size: cover;
+        height: 105vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center 0;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px  #000000;
+    }
+
+    main {
+        width: 100vw;
+        margin: 40px auto 0;
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        margin: 0 auto 0;
+        width: 90%;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 3px  #000000;
+    }
+
+    button {
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        padding: 0;
+        border-radius: 240px;
+        border: none;
+        box-shadow: 1px 1px 4px 2px #6d6c6c;
+        cursor: pointer;
+    }
+
+
+    .botao-fogo {
+        position: absolute;
+        display: block;
+        margin: 20px auto 0;
+        left: 40%;
+    }
+
+    .alinhamento-agua-planta {
+        display: flex;
+        margin: 20px auto 0;
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    .sua-pontuaçao, .pontuaçao-adversario {
+        margin: 230px 0 0;
+        width: 45%;
+        height: 30%;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .elemento-jogador, .elemento-bot {
+        display: block;
+        margin: 8px auto 0;
+        width: 40px;
+    }
+
+    .sua-pontuaçao {
+        left: 0;
+    }
+
+    .pontuaçao-adversario {
+        right: 0;
+    }
+
+    .anuncio-resultado {
+        text-align: center;
+        margin: 260px auto 15px;
+        font-size: 30px;
+        width: 70%;
+        line-height: 40px;
+        color: white;
+        text-shadow: 4px 4px 16px  #000000;
+        background-color: #ffffff8f;
+        border-radius: 12px;
+    }
+
+    .botao-reset {
+        display: block;
+        height: 40px;
+        width: 280px;
+        padding: 0;
+        border-radius: 14px;
+        font-size: 20px;
+        border: none;
+        box-shadow: 1px 1px 4px 2px #6d6c6c;
+        cursor: pointer;
+        margin: 0px auto 0;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>Elemental War</title>
+</head>
+<body>
+    <h1>Elemental War</h1>
+   
+        <div class="sua-pontuaçao">
+            <p><u>Você</u></p>
+            <br>
+            <p>Pontuação:</p>
+            <span class="pontuaçao-jogador">0</span>
+            <br>
+            <br>
+            <p>Elemento Atual:</p>
+            <img class="elemento-jogador" src="" alt="">
+
+
+        </div>
+
+        <div class="pontuaçao-adversario">
+            <p><u>Adversário</u></p>
+            <br>
+            <p>Pontuação:</p>
+            <span class="pontuaçao-bot">0</span>
+            <br>
+            <br>
+            <p>Elemento Atual:</p>
+            <img class="elemento-bot" src="" alt="">
+        </div>
+
+    <main>
+        <h2>Escolha um elemento:</h2>
+        <!-- <div class="botoes-elementais"> -->
+            <button  onclick="jogadaHumana('fogo')" class="botao-fogo"><img src="./assets/fogo.png" alt="logo-fogo"></button>
+            
+            <section class="alinhamento-agua-planta">
+                <button onclick="jogadaHumana('agua')" class="botao-agua"><img src="./assets/agua.png" alt="logo-agua"></button>
+                <button onclick="jogadaHumana('planta')" class="botao-planta"><img src="./assets/planta.png" alt="logo-folha"></button>
+            </section> 
+        <!-- </div>   -->
+        <p class="anuncio-resultado"></p>
+        <button onclick="reset()" class="botao-reset">Resetar Pontuações</button>
+    </main>
+</body>
+    <script src="./scripts.js"></script>
+</html>
